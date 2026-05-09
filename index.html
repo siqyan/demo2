@@ -61,6 +61,40 @@
       opacity: 0.9;
     }
     
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-card {
+      background: rgba(255,255,255,0.15);
+      padding: 1.2rem;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .feature-card .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .feature-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+    
+    .feature-card p {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    
     .cta {
       display: inline-block;
       padding: 1rem 2rem;
@@ -122,6 +156,30 @@
         这是一个使用 Cloudflare Pages 免费托管的静态网站。<br>
         自动部署已配置完成，每次代码推送都会自动更新！
       </p>
+      
+      <div class="features">
+        <div class="feature-card">
+          <div class="icon">🚀</div>
+          <h3>全球加速</h3>
+          <p>200+ 节点</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔒</div>
+          <h3>免费 SSL</h3>
+          <p>自动 HTTPS</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⚡</div>
+          <h3>边缘计算</h3>
+          <p>超低延迟</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🐳</div>
+          <h3>自动部署</h3>
+          <p>Push 即更新</p>
+        </div>
+      </div>
+      
       <div class="status">
         <span>部署状态: 运行中</span>
       </div>
