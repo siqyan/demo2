@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎访问</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+    
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    
+    .hero {
+      text-align: center;
+      max-width: 600px;
+    }
+    
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .cta {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #fff;
+      color: #667eea;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    
+    .status::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 我的网站</h1>
+    <p>基于 Cloudflare Pages 部署</p>
+  </header>
+  
+  <main>
+    <div class="hero">
+      <h2>👋 欢迎来到这里</h2>
+      <p>
+        这是一个使用 Cloudflare Pages 免费托管的静态网站。<br>
+        自动部署已配置完成，每次代码推送都会自动更新！
+      </p>
+      <div class="status">
+        <span>部署状态: 运行中</span>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2026 · 使用 Cloudflare Pages 免费托管</p>
+  </footer>
+</body>
+</html>
